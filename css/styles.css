@@ -1,0 +1,140 @@
+/* Color Palette
+# - color 1 (dark): #e45aa8
+# - color 2 (light): #ffd1e6
+# - color 3 (medium): #ffadd3
+# - color 4 (text): #1a1a1a
+*/
+
+/* Global styles
+------------------------------------*/
+
+/* border box fix */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400; /* this sets the thickness of the font */
+    font-style: normal;
+    text-align: center; /* centers ALL text */
+    color: #1a1a1a;
+}
+
+/* Gives a card look */
+/*
+header,
+main section,
+footer {
+    max-width: 900px;
+    margin: 18px auto;
+    padding: 22px 18px;
+    border-radius: 16px;
+}
+*/
+
+h1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4rem;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Delius", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    margin-top: 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 12px auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 225px;  /* Image is not a circle without it being 225px tall. 175px plattens it slightly into an oval */
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+/* Header & Footer
+------------------------------------*/
+header {
+    background: #e45aa8; /* darker pink */
+}
+
+footer {
+    background: #e45aa8; /* same dark pink as header */
+    text-align: center;
+}
+
+.profile-img {
+    /*width: 300px;*/
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 80% center; /* Adjust the position to show more of the face */
+    /*float: left;*/
+    /*margin-right: 30px;*/
+}
+
+footer a {
+    display: inline-block;
+    margin: 6px 10px;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+.job-item {
+    overflow: hidden;
+}
+
+/* Work Experience
+------------------------------------*/
+main section:first-of-type {
+    background: #ffd1e6; /* light pink */
+}
+
+
+/* Education
+------------------------------------*/
+main section:last-of-type {
+    background: #ffadd3; /* slightly darker than Work Experience */
+}
